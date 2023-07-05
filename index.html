@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+    <title>Multi-step Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress-card">
+            <ul>
+                <div class="row">
+                    <div class="col-1 indicator">1</div>
+                    <div class="col-2">
+                        <p><span>STEP 1</span> YOUR INFO</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 indicator">2</div>
+                    <div class="col-2">
+                        <p><span>STEP 2</span> SELECT PLAN</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 indicator">3</div>
+                    <div class="col-2">
+                        <p><span>STEP 2</span> ADD-ONS</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 indicator">4</div>
+                    <div class="col-2">
+                        <p><span>STEP 2</span> SUMMARY</p>
+                    </div>
+                </div>
+
+
+            </ul>
+        </div>
+        <div class="data-card">
+
+            <form id="myForm1" action="">
+
+                <div class="title">
+                    <h1>Personal info</h1>
+                    <p>Please provide your name, email address, and phone number.</p>
+                </div>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="" required title="This field is required">
+                </div>
+
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="" required title="This field is required">
+                </div>
+
+                <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="" required title="This field is required">
+                </div>
+
+                <div class="nxt-btn">
+                    <button id="next-btn-1" type="submit">Next step</button>
+                </div>
+            </form>
+            <form id="myForm2" action="">
+
+                <div class="title">
+                    <h1>Select your plan</h1>
+                    <p>You have the option of monthly or yearly billing.</p>
+                </div>
+                <div class="card-container">
+                    <div class="card card-1">
+                        <img src="/assets/images/icon-arcade.svg" alt="">
+                        <p>Arcade</p>
+                        <p class="pricing">$9/mo</p>
+                    </div>
+                    <div class="card card-2">
+                        <img src="/assets/images/icon-advanced.svg" alt="">
+                        <p>Advanced</p>
+                        <p class="pricing">$12/mo</p>
+                    </div>
+                    <div class="card card-3">
+                        <img src="/assets/images/icon-pro.svg" alt="">
+                        <p>Pro</p>
+                        <p class="pricing">$15/mo</p>
+                    </div>
+                </div>
+                <div class="duration">
+                    <p id="Monthly">Monthly</p>
+                    <label class="toggle-switch">
+                        <input id="checkbox" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <p id="yearly">yearly</p>
+
+
+                </div>
+
+                <div class="nxt-btn-2">
+                    <button id="back-1" type="submit">Go back</button>
+                    <button id="next-btn-2" type="submit">Next step</button>
+                </div>
+            </form>
+
+            <form id="myForm3" action="">
+
+                <div class="title">
+                    <h1>Pick adds-ons</h1>
+                    <p>Add-ons help to enhance your gaming experience.</p>
+                </div>
+
+                <div class="addon-container">
+                    <div class="addon-card addon-card-1">
+                        <input type="checkbox" name="" id="" class="addon-chkbox">
+                        <div class="addon-text">
+                            <p>Online service</p>
+                            <span>Access to multiplayer games</span>
+                        </div>
+                        <div class="add-cost">
+                            <span id="addon-cost-1">+$1/mo</span>
+                        </div>
+                    </div>
+                    <div class="addon-card addon-card-2">
+                        <input type="checkbox" name="" id="" class="addon-chkbox">
+                        <div class="addon-text">
+                            <p>Larger storage</p>
+                            <span>Extra 1TB of cloud save</span>
+                        </div>
+                        <div class="add-cost">
+                            <span id="addon-cost-2">+$2/mo</span>
+                        </div>
+                    </div>
+                    <div class="addon-card addon-card-3">
+                        <input type="checkbox" name="" id="" class="addon-chkbox">
+                        <div class="addon-text">
+                            <p>Customizable profile</p>
+                            <span>Custom theme on your profile</span>
+                        </div>
+                        <div class="add-cost">
+                            <span id="addon-cost-3">+$2/mo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="nxt-btn">
+                    <button id="next-btn-3" type="submit">Next step</button>
+                </div> -->
+                <div class="nxt-btn-3 nxt-btn-2">
+                    <button id="back-2" type="submit">Go back</button>
+                    <button id="next-btn-3" type="submit">Next step</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

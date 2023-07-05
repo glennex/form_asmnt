@@ -1,0 +1,342 @@
+
+:root{
+    --marineBlue-color:hsl(213, 96%, 18%); 
+    --PurplishBlue-color: hsl(243, 100%, 62%);
+    --PastelBlue-color: hsl(228, 100%, 84%);
+    --LightBlue-color: hsl(206, 94%, 87%);
+    --StrawberryRed-color: hsl(354, 84%, 57%);
+    --CoolGray-color: hsl(231, 11%, 63%);
+    --LightGray-color: hsl(229, 24%, 87%);
+    --Magnolia-color: hsl(217, 100%, 97%);
+    --Alabaster-color: hsl(231, 100%, 99%);
+    --white-color: hsl(0, 0%, 100%);
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(217, 100%, 97%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    background-color:var(--white-color);
+    height:75%;
+    width: 65%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 4px 6px var(--LightGray-color), 0px 4px 6px var(--LightGray-color);
+    overflow: hidden;
+}
+
+.progress-card{
+    background-color: blue;
+    height: 95%;
+    width: 27%;
+    margin-left: 2%;
+    border-radius: 10px;
+    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.data-card{
+    background-color:var(--white-color);
+    height: 95%;
+    width: 65%;
+    border-radius: 10px;
+    margin-right: 2%;
+    display: block;
+    padding: 10%;
+}
+.progress-card ul{
+ display: block;
+    padding: 20px 35px 0;
+}
+.indicator{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    border: 1px solid var(--white-color);
+    transition: 0.5s ease-in-out;
+} 
+.row span{
+    display: block;
+    padding: 5px 0;
+    font-size: x-small;
+    font-weight:400;
+    color: var(--PastelBlue-color);
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    padding:10px 0;
+    color: white;
+    font-weight: 700;
+    font-size: smaller;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--CoolGray-color);
+    border-radius:5px;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+}
+form input:focus{
+    border: 2px solid var(--CoolGray-color);
+}
+.title{
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.title p{
+    color: var(--CoolGray-color);
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.field label{
+    font-size: small;
+    font-weight: 700;
+}
+.nxt-btn button{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    background-color: var(--marineBlue-color);
+    color: var(--white-color);
+    margin-left: 80%;
+    margin-top: 70px;
+ }
+ .nxt-btn button:hover{
+    background-color: var(--PurplishBlue-color);
+ }
+
+ .active{
+    background-color: var(--LightBlue-color);
+ }
+
+ /* second form page*/
+
+#myForm2{
+    margin-top: 100px;
+    
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.card{
+    height: 120px;
+    width: 110px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border: solid 1px var(--PurplishBlue-color);
+    padding: 15px 0 0 15px;
+    font-size: small;
+    font-weight: 700;
+    
+}
+.pricing{
+    font-size: smaller;
+    font-weight: 500;
+    color: var(--CoolGray-color);
+}
+.card img{
+    padding-bottom: 15px;
+}
+
+/*toggle button*/
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    
+  }
+  
+  .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: var(--marineBlue-color);
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(32px);
+  }
+  
+  
+  input[type="checkbox"]:checked + span {
+    color: green;
+  }
+
+  .duration{
+    background-color: var(--Magnolia-color);
+    border-radius: 3px;
+    width: 92%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+
+  .nxt-btn-2{
+    display: flex;
+    align-items: center;
+    gap: 50%;
+    padding: 20px 0 0 0px;
+    margin: 50px 0 0 0px;
+  }
+
+  #back-1{
+    background-color: var(--white-color);
+    color: var(--marineBlue-color);
+    font-size: small;
+    font-weight: 700;
+  }
+
+  .nxt-btn-2 button{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    background-color: var(--marineBlue-color);
+    color: var(--white-color);
+    font-size: small;
+    font-weight: 500;
+   
+  }
+
+
+
+
+  #myForm3{
+    margin-top: 60px;
+  }
+  .addon-container{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+.addon-card{
+    border-radius: 5px;
+    width: 100%;
+  background-color: var(--white-color);
+    display: flex;
+    align-items: flex-start;
+    margin: 1% 0;
+    padding: 10px;
+    border: 1px solid var(--PurplishBlue-color);
+    gap: 10%;
+}
+.addon-chkbox{
+    height: 16px;
+    width: 16px;
+
+}
+.add-cost{
+    margin-top: 10px;
+}
+.addon-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#addon-cost-1{
+    margin-left: 60px;
+}
+#addon-cost-2{
+    margin-left: 90px;
+}
+#addon-cost-3{
+    margin-left: 50px;
+}
+.addon-card p{
+    font-size: medium;
+    font-weight: 700;
+}
+.addon-card span{
+    font-size: small;
+    font-weight: 500;
+    color: var(--CoolGray-color);
+}
+
+.nxt-btn-3{
+    gap: 60%;
+}
+#back-2,#back-1{
+    background-color: var(--white-color);
+    color: var(--CoolGray-color);
+    font-weight: 700;
+}
+#back-2:hover{
+    color: black;
+}
+#back-1:hover{
+    color: black;
+}
+#next-btn-3:hover{
+    background-color: var(--PurplishBlue-color);
+}
+#next-btn-2:hover{
+    background-color: var(--PurplishBlue-color);
+}
+#myForm1, #myForm2,#myForm3{
+    transition: 0.5s ease-in;
+}
